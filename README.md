@@ -1,15 +1,16 @@
 # Flat-Remix-Blue-Modification
+## Instruction
 Removed global text shadow, icon shadow, top bar shadow and reduced top bar icon spacing based on Flat-Remix-Blue theme from [flat-remix-gnome](https://github.com/daniruiz/flat-remix-gnome).  
 ## Screenshot
 ![screenshot](https://raw.githubusercontent.com/Cyunrei/Flat-Remix-Blue-Modification/master/screenshot.png)
-## Use
+### Change shell theme
 1. Open terminal.
-```bash
+```shell
 $ git clone git@github.com:Cyunrei/Flat-Remix-Blue-Modification.git
 $ cd Flat-Remix-Blue-Modification
-$ sudo cp /usr/share/gnome-shell/theme/Flat-Remix-Blue/gnome-shell.css /usr/share/gnome-shell/theme/Flat-Remix-Blue/gnome-shell.css.bak
-$ sudo cp -f gnome-shell.css /usr/share/gnome-shell/theme/Flat-Remix-Blue/
+$ chmod +x replace.sh
+$ ./replace.sh
 ```
 2. Log out account.
-3. Switch Session type:Flat remix on wayland.
+3. Switch Session type:Flat Remix on Wayland.
 4. Log in.
