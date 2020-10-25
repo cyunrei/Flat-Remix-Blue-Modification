@@ -1136,7 +1136,7 @@ StScrollBar {
   #panel .panel-button {
     font-weight: bold;
     color: #ccc;
-    -natural-hpadding: 12px;
+    -natural-hpadding: 6px;
     -minimum-hpadding: 6px; }
     #panel .panel-button:hover {
       color: white; }
