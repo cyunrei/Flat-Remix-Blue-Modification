@@ -8,7 +8,7 @@ After
 ![screenshot](https://raw.githubusercontent.com/Cyunrei/Flat-Remix-Blue-Modification/master/screenshot.png)
 
 ### X Server Session
->`:warning`Shell layout changes due to gnome version update. If you gnome version > 3.36 please execute `replace_gnome_3.36+.sh`.
+> :warning: Shell layout changes due to gnome version update. If you gnome version > 3.36 please execute `replace_gnome_3.36+.sh`.
 #### Change shell theme
 1. Open terminal.
 ```shell
@@ -26,7 +26,7 @@ $ ./recovery.sh
 ```
 2. Use`Alt`+`F2` and input `r` command to refresh shell.
 ### Wayland Session
->`:warning`Shell layout changes due to gnome version update. If you gnome version > 3.36 please execute `replace_gnome_3.36+.sh`.
+> :warning: Shell layout changes due to gnome version update. If you gnome version > 3.36 please execute `replace_gnome_3.36+.sh`.
 #### Change shell theme
 1. Open terminal.
 ```shell
