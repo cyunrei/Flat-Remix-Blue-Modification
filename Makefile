@@ -5,6 +5,7 @@ BASE_THEME ?= Flat-Remix-Blue-fullPanel-Mod-by-Cyunrei
 BLUR ?= 2
 IS_UBUNTU ?= $(shell echo "$$(lsb_release -si 2> /dev/null)" | grep -q 'Ubuntu\|Pop' && echo true)
 USER_HOME ?= $(shell eval echo ~$$SUDO_USER)
+USER_THEMES_DIR = $(USER_HOME)/.themes
 
 # !! Patch for pamac
 # Pamac installs packages as root, no 'sudo' (due to pkexec), so dconf is unable
@@ -68,4 +69,11 @@ else
 	-mv $(PREFIX)/share/gnome-shell/gnome-shell-theme.gresource.old $(PREFIX)/share/gnome-shell/gnome-shell-theme.gresource
 endif
 
-.PHONY: all _get_login_background build install uninstall
+install_user:
+	mkdir -p $(USER_THEMES_DIR)
+	cp -r $(BASE_THEME) $(USER_THEMES_DIR)
+
+uninstall_user:
+	rm -rf $(USER_THEMES_DIR)/$(BASE_THEME)
+
+.PHONY: all _get_login_background build install uninstall install_user uninstall_user
