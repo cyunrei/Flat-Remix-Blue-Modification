@@ -1,11 +1,13 @@
 # Flat-Remix-Blue-Modification
 ## Instruction
-Removed global text shadow, icon shadow, top bar shadow and reduced top bar icon spacing based on Flat-Remix-Blue theme from [flat-remix-gnome](https://github.com/daniruiz/flat-remix-gnome).  
+Removed global text shadow, icon shadow, top bar shadow and reduced top bar icon spacing based on Flat-Remix-Blue theme from [flat-remix-gnome](https://github.com/daniruiz/flat-remix-gnome).
+> :warning: Please make sure you already install the [flat-remix-gnome](https://github.com/daniruiz/flat-remix-gnome) on your system before you execute these shell script.
 ## Screenshot
 Before  
-![screenshot_before](https://raw.githubusercontent.com/Cyunrei/Flat-Remix-Blue-Modification/master/screenshot_before.png)
+![screenshot_before](https://raw.githubusercontent.com/Cyunrei/Flat-Remix-Blue-Modification/old/screenshot_before.png)
+
 After  
-![screenshot](https://raw.githubusercontent.com/Cyunrei/Flat-Remix-Blue-Modification/master/screenshot.png)
+![screenshot](https://raw.githubusercontent.com/Cyunrei/Flat-Remix-Blue-Modification/old/screenshot.png)
 
 ### X Server Session
 > :warning: Shell layout changes due to gnome version update. If you gnome version > 3.36 please execute `replace_gnome_3.36+.sh`.
@@ -30,7 +32,7 @@ $ ./recovery.sh
 #### Change shell theme
 1. Open terminal.
 ```shell
-$ git clone git@github.com:Cyunrei/Flat-Remix-Blue-Modification.git
+$ git clone --branch old https://github.com/Cyunrei/Flat-Remix-Blue-Modification.git
 $ cd Flat-Remix-Blue-Modification
 $ chmod +x replace.sh
 $ ./replace.sh
