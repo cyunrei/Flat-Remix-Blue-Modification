@@ -2173,6 +2173,8 @@ StScrollBar StButton#hhandle:active {
   font-weight: bold;
   height: 2.2em;
   transition-duration: 250ms;
+  /* https://www.reddit.com/r/gnome/comments/140r273/this_black_line_appeared_between_topbar_and/ */
+  box-shadow: 0 0 0px transparent !important;
 }
 #panel.unlock-screen,
 #panel.login-screen,
